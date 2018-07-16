@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dianita.tabla.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <LinearLayout
+        android:layout_width="378dp"
+        android:layout_height="504dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:animateLayoutChanges="false"
+        android:background="@android:color/holo_green_light"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <EditText
+            android:id="@+id/txtnum"
+            android:layout_width="374dp"
+            android:layout_height="wrap_content"
+            android:autoText="false"
+            android:background="@android:color/transparent"
+            android:cursorVisible="true"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="INGRESE NUMEROS"
+            android:inputType="textPersonName|numberSigned"
+            tools:layout_editor_absoluteX="4dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Agregar"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <TableLayout
+            android:id="@+id/tbllista"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="290dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btnCalDA"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="DA" />
+
+        <Button
+            android:id="@+id/btnCalDNA"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="DNA" />
+
+        <TextView
+            android:id="@+id/txaResDNA"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:gravity="center_horizontal"
+            android:text="DATOS NO AGRUPADOS" />
+
+        <TextView
+            android:id="@+id/txaResDA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_bright"
+            android:cursorVisible="false"
+            android:gravity="center_horizontal"
+            android:text="DATOS AGRUPADOS" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
